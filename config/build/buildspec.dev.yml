@@ -4,10 +4,10 @@ phases:
   install:
     on-failure: ABORT
     runtime-versions:
-      nodejs: 14
+      nodejs: 20
     commands:
       - echo Installing serverless CLI
-      - npm i -g serverless@2
+      - npm i -g serverless@3
       - echo Installing npm dependencies of notes service
       - npm install
   build:
